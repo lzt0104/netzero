@@ -5,15 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>里特色介紹</title>
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
     <style>
         .section-title {
             background-color: #f8f9fa;
@@ -29,6 +23,10 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .card:hover {
@@ -38,17 +36,47 @@
         .card-title {
             color: #343a40;
             font-weight: bold;
+            margin-bottom: 0.5rem;
         }
 
         .card-text {
             font-size: 0.9rem;
             color: #6c757d;
+            margin-top: 0;
         }
 
-        .icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            font-size: 1.2rem;
+        }
+
+        .lead a {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .row > .col-md-6 {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -69,20 +97,20 @@
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu2" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">楠梓區</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="../many/1.html"><button class="dropdown-item" type="button">清豐里</button></a></li>
-                        <li><a href="../many/2.html"><button class="dropdown-item" type="button">五常里</button></a></li>
-                        <li><a href="../many/3.html"><button class="dropdown-item" type="button">享平里</button></a></li>
-                        <li><a href="../many/4.html"><button class="dropdown-item" type="button">惠民里</button></a></li>
-                        <li><a href="../many/5.html"><button class="dropdown-item" type="button">惠豐里</button></a></li>
-                        <li><a href="../many/6.html"><button class="dropdown-item" type="button">玉屏里</button></a></li>
-                        <li><a href="../many/7.html"><button class="dropdown-item" type="button">瑞屏里</button></a></li>
-                        <li><a href="../many/8.html"><button class="dropdown-item" type="button">宏毅里</button></a></li>
-                        <li><a href="../many/9.html"><button class="dropdown-item" type="button">宏榮里</button></a></li>
-                        <li><a href="../many/10.html"><button class="dropdown-item" type="button">中興里</button></a></li>
-                        <li><a href="../many/11.html"><button class="dropdown-item" type="button">中和里</button></a></li>
-                        <li><a href="../many/12.html"><button class="dropdown-item" type="button">國昌里</button></a></li>
-                        <li><a href="../many/13.html"><button class="dropdown-item" type="button">加昌里</button></a></li>
-                        <li><a href="../many/14.html"><button class="dropdown-item" type="button">建昌里</button></a></li>
+                        <li><a href="../many/1.html" class="dropdown-item">清豐里</a></li>
+                        <li><a href="../many/2.html" class="dropdown-item">五常里</a></li>
+                        <li><a href="../many/3.html" class="dropdown-item">享平里</a></li>
+                        <li><a href="../many/4.html" class="dropdown-item">惠民里</a></li>
+                        <li><a href="../many/5.html" class="dropdown-item">惠豐里</a></li>
+                        <li><a href="../many/6.html" class="dropdown-item">玉屏里</a></li>
+                        <li><a href="../many/7.html" class="dropdown-item">瑞屏里</a></li>
+                        <li><a href="../many/8.html" class="dropdown-item">宏毅里</a></li>
+                        <li><a href="../many/9.html" class="dropdown-item">宏榮里</a></li>
+                        <li><a href="../many/10.html" class="dropdown-item">中興里</a></li>
+                        <li><a href="../many/11.html" class="dropdown-item">中和里</a></li>
+                        <li><a href="../many/12.html" class="dropdown-item">國昌里</a></li>
+                        <li><a href="../many/13.html" class="dropdown-item">加昌里</a></li>
+                        <li><a href="../many/14.html" class="dropdown-item">建昌里</a></li>
                     </ul>
                 </li>
             </ul>
@@ -95,13 +123,14 @@
         </p>
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6">
                 <div class="section-title">
                     <h2>文化面</h2>
                 </div>
-                <div class="card mb-4">
+                <div class="card">
+                    <img src="../images/2/1.jpg" class="card-img-top" alt="東門王爺廟">
                     <div class="card-body">
-                        <h5 class="card-title"><img src="../images/2/1.jpg" class="card-img-top">東門王爺廟</h5>
+                        <h5 class="card-title">東門王爺廟</h5>
                         <p class="card-text">
                             依據東門王爺降旨指示，其乃清朝時代楠梓地區東門守備。當時有外亰者攻打東門城，為保護社里，主將 大王爺（姓張）率領副將 二王爺（姓朱）、三王爺（姓劉）和城內的勇士一起抵抗而陣亡。
                             去世後保護鄉里的精神仍在，更在民國三、四十年間屢見神蹟。人們為了感念祂們的精神，民國四十年間由地方人士發起成立東門公會，在今興楠路、岳陽路口建立一座小廟供奉之，名為東門公。後來又得到本地天后宮天上聖母及大社青雲宮神農大帝的認同與提攜。
@@ -111,18 +140,20 @@
                         <p>資料來源：<a href="https://crgis.rchss.sinica.edu.tw/temples/KaohsiungCity/nanzi/64004004-NZDMGM">中研院文化資源地理資訊系統</a></p>
                     </div>
                 </div>
-                <div class="card mb-4">
+                <div class="card">
+                    <img src="../images/2/2.jpg" class="card-img-top" alt="楠梓天后宮">
                     <div class="card-body">
-                        <h5 class="card-title"><img src="../images/2/2.jpg" class="card-img-top">楠梓天后宮</h5>
+                        <h5 class="card-title">楠梓天后宮</h5>
                         <p class="card-text">
                             楠梓天后宮的歷史二百餘年。在清領臺灣初期，楠仔坑街即已形成，街屋眾多，為府縣的交通要道，也是鳳山、旗山、岡山三地的交會點及貨運集散地，故有「三山歸一坑，前街透後巷」的俗諺，而楠梓天后宮也見證早期楠仔坑的繁華歲月。
                         </p>
                         <p>資料來源：<a href="https://www.nzmazu.org.tw/">楠梓天后宮</a></p>
                     </div>
                 </div>
-                <div class="card mb-4">
+                <div class="card">
+                    <img src="../images/2/3.jpg" class="card-img-top" alt="鹹瓜巷">
                     <div class="card-body">
-                        <h5 class="card-title"><img src="../images/2/3.jpg" class="card-img-top">鹹瓜巷</h5>
+                        <h5 class="card-title">鹹瓜巷</h5>
                         <p class="card-text">
                             楠梓舊街（街道名）乃至鹹瓜仔巷（即興楠橫巷）是最古老初期發展之街市，後往北發展至楠梓東街。 楠梓橋，古稱楠仔坑橋、大橋。 橋頭立著三座重修石碑：乾隆39年，道光8年、光緒14年。
                             旁有南無阿彌陀佛石碑、溪底公祠（對聯「溪岸有神人供奉；底水無濁民平安。」
@@ -133,13 +164,11 @@
             </div>
         </div>
     </div>
-    <!-- Repeat the above structure for each 里 -->
-
-    </div>
-
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TIqOUf2eFAgGUGukv5A5eSkj6H0i4lLnk5G+8t+ibmaWO4vEkFl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
